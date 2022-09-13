@@ -1,15 +1,18 @@
 <html>
-  <head> </head>
+  <head>
+    <link rel="stylesheet" href="style.css">
+  </head>
 
   <body>
-    <table>
-      <th>Follow Up Survey</th>
-    </table>
-    <table>
+    <div>
+    <table class="header">
+      <td class="full-width center"><h1>Follow Up Survey</h1></td>
+      </table>
+      <table>
       <!-- labels -->
       <tr>
-        <td><label for="service-date">When did you use our service</label></td>
-        <td><label for="service-name">Name of product of service</label></td>
+        <td class=""><label for="service-date" class="text-color">When did you use our service</label></td>
+        <td class=""><label for="service-name" class="text-color">Name of product of service</label></td>
       </tr>
 
       <!-- inputs -->
@@ -18,42 +21,56 @@
         <td><input type="text" name="service-name" id="service-name" /></td>
       </tr>
 
-      <tr>
-        <td>Overall, how satisfied are you with the product or service?</td>
-      </tr>
+      </table>
+      
+        <p>Overall, how satisfied are you with the product or service?</p>
+        <table>
       <tr>
         <td>
           <input type="radio" name="satisfaction" id="" />
+          </td>
+        <td>
           <label>Very satisfied</label>
         </td>
         <td>
           <input type="radio" name="satisfaction" id="" />
+          </td>
+        <td>
           <label>Satisfied</label>
         </td>
       </tr>
       <tr>
         <td>
           <input type="radio" name="satisfaction" id="" />
+          </td>
+        <td>
           <label>Neutral</label>
         </td>
         <td>
           <input type="radio" name="satisfaction" id="" />
+          </td>
+        <td>
           <label>Unsatisfied</label>
         </td>
       </tr>
       <tr>
         <td>
           <input type="radio" name="satisfaction" id="" />
+          </td>
+        <td>
           <label>Very unsatisfied</label>
         </td>
         <td>
           <input type="radio" name="satisfaction" id="" />
+          </td>
+        <td>
           <label>N/A</label>
         </td>
       </tr>
-      <tr>
-        <td>Did our product or service meet your expecations?</td>
-      </tr>
+      </table>
+
+<p> Did our product or service meet your expecations?</p>
+      <table>
       <tr>
         <td>
           <input type="radio" name="expect" id="expect-yes" /><label>Yes</label>
@@ -62,10 +79,9 @@
           <input type="radio" name="expect" id="expect-no" /><label>No</label>
         </td>
       </tr>
-
-      <tr>
-        <td>Would you recommend this product or service to a friend</td>
-      </tr>
+      </table>
+     <p> Would you recommend this product or service to a friend </p>
+      <table>
 
       <tr>
         <td>
@@ -77,40 +93,73 @@
           <label>No</label>
         </td>
       </tr>
+    </table>
 
-      <tr><td>What aspect of the product or service were you most satisfied by?</td></tr>
-
+         <p> What aspect of the product or service were you most satisfied by?</p>
+          <table>
       <tr>
-        <td><input type="radio" name="aspect-liked" id="liked-quality"></td>
-        <label>Quality</label>
-        <td><input type="radio" name="aspect-liked" id="liked-price"></td>
-        <label>Price</label>
+        <td>
+          <input type="radio" name="aspect-liked" id="liked-quality" />
+          <label>Quality</label>
+        </td>
+        <td>
+          <input type="radio" name="aspect-liked" id="liked-price" />
+          <label>Price</label>
+        </td>
       </tr>
 
       <tr>
-        <td><input type="radio" name="aspect-liked" id="liked-service"></td>
-        <label>Customer Service</label>
-        <td><input type="radio" name="aspect-liked" id="liked-install"></td>
-        <label>Installation or first use experience</label>
+        <td>
+          <input type="radio" name="aspect-liked" id="liked-service" />
+          <label>Customer Service</label>
+        </td>
+        <td>
+          <input type="radio" name="aspect-liked" id="liked-install" />
+          <label>Installation or first use experience</label>
+        </td>
       </tr>
+      </table>
+      
 
-      <tr><td>What aspect of the product or service were you least satisfied by?</td></tr>
+        <p>  What aspect of the product or service were you least satisfied by?</p>
+        
+        <table class="extra-margin-bottom">
+      <tr>
+        <td>
+          <input type="radio" name="aspect-disliked" id="disliked-quality" />
+          <label>Quality</label>
+        </td>
+        <td>
+          <input type="radio" name="aspect-disliked" id="disliked-price" />
+          <label>Price</label>
+        </td>
+      </tr>
 
       <tr>
-        <td><input type="radio" name="aspect-disliked" id="disliked-quality"></td>
-        <label>Quality</label>
-        <td><input type="radio" name="aspect-disliked" id="disliked-price"></td>
-        <label>Price</label>
+        <td>
+          <input type="radio" name="aspect-disliked" id="disliked-service" />
+          <label>Customer Service</label>
+        </td>
+        <td>
+          <input type="radio" name="aspect-disliked" id="disliked-install" />
+          <label>Installation or first use experience</label>
+        </td>
       </tr>
-
-      <tr>
-        <td><input type="radio" name="aspect-disliked" id="disliked-service"></td>
-        <label>Customer Service</label>
-        <td><input type="radio" name="aspect-disliked" id="disliked-install"></td>
-        <label>Installation or first use experience</label>
-      </tr>
-
 
     </table>
+      <table>
+      <tr>
+        <td>Additional Comments</td>
+      </tr>
+      <tr>
+        <td>
+          <textarea
+            name="comments"
+            id="comments"
+          ></textarea>
+        </td>
+      </tr>
+    </table>
+  </div>
   </body>
 </html>
