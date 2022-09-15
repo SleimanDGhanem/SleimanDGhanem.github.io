@@ -7,8 +7,10 @@ body{
 }
 div{
   background-color: #E5E5E5;
-  width: 35%;
+  width: 560.509px;
   margin-top: 3%;
+  border-radius: 0 0 2px 2px;
+  box-shadow: 0px 2px 0px 0px #9D9EA3;
 }
 table, p {
   margin:auto;
@@ -37,8 +39,21 @@ label{
 }
 
 textarea{
-  width: 95%;
+  width: 530px;
+  height:100px;
   
+}
+
+button{
+  margin-top: 40px;
+  margin-bottom: 30px;
+  width:130px;
+  height:30px;
+  border: solid 0px black;
+  border-radius: 3px;
+  color: white;
+  background-image: linear-gradient(#595959, #585758);
+
 }
 
 .top-input{
@@ -48,6 +63,10 @@ textarea{
   border-radius: 2.5px
   
 }
+.full-width{
+  width: 100%;
+}
+
 
 .no-right{
   width: 10%;
@@ -59,11 +78,11 @@ textarea{
 
 .header{
   background-color: white;
-  height: 100px;
+  height: 110px;
+  width: 100%;
   text-align: center;
   color: #78363F;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  width: auto;
   margin-bottom: 2%;
 }
 
